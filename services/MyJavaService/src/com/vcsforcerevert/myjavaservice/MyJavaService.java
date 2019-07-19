@@ -72,7 +72,7 @@ public class MyJavaService {
         logger.debug("a", result);
         logger.debug("b", result);
         logger.debug("c", result);
-        logger.debug("d", result);
+        logger.debug("4", result);
         
         return result;
     }
