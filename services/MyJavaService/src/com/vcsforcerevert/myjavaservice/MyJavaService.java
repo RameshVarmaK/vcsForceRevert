@@ -58,5 +58,18 @@ public class MyJavaService {
         logger.debug("Returning {}", result);
         return result;
     }
+    
+    public String sampleJavaOperation1(String name, HttpServletRequest request) {
+        logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
+        
+        String result = null;
+        if (securityService.isAuthenticated()) {
+            result = "Hello " + name + ", You are logged in as "+  securityService.getLoggedInUser().getUserName();
+        } else {
+            result = "Hello " + name + ", You are not authenticated yet!";
+        }
+        logger.debug("Returning {}", result);
+        return result;
+    }
 
 }
