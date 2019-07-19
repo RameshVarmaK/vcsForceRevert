@@ -69,6 +69,10 @@ public class MyJavaService {
             result = "Hello " + name + ", You are not authenticated yet!";
         }
         logger.debug("Returning {}", result);
+        logger.debug("a", result);
+        logger.debug("b", result);
+        logger.debug("c", result);
+        
         return result;
     }
 
