@@ -61,7 +61,7 @@ public class MyJavaService {
     
     public String sampleJavaOperation1(String name, HttpServletRequest request) {
         logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
-        
+        //updated the newly created method
         String result = null;
         if (securityService.isAuthenticated()) {
             result = "Hello " + name + ", You are logged in as "+  securityService.getLoggedInUser().getUserName();
