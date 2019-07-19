@@ -1,0 +1,7 @@
+{
+  "id" : "MyJavaService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.vcsforcerevert.myjavaservice" ],
+  "serviceClassNames" : [ "com.vcsforcerevert.myjavaservice.MyJavaService" ],
+  "title" : "MyJavaService"
+}
